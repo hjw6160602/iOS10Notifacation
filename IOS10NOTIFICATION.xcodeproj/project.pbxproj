@@ -13,6 +13,12 @@
 		67B7ECFA1DE44EDE00790068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B7ECF81DE44EDE00790068 /* LaunchScreen.storyboard */; };
 		67B7ED081DE4524F00790068 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED051DE4524F00790068 /* main.m */; };
 		67B7ED091DE4524F00790068 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED071DE4524F00790068 /* ViewController.m */; };
+		67B7ED0C1DE452FF00790068 /* AuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED0B1DE452FF00790068 /* AuthorizationViewController.m */; };
+		67B7ED0F1DE4531500790068 /* TimeIntervalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED0E1DE4531500790068 /* TimeIntervalViewController.m */; };
+		67B7ED121DE4532800790068 /* ManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED111DE4532800790068 /* ManagementViewController.m */; };
+		67B7ED151DE4533900790068 /* ActionableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED141DE4533900790068 /* ActionableViewController.m */; };
+		67B7ED181DE4534700790068 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED171DE4534700790068 /* MediaViewController.m */; };
+		67B7ED1B1DE4535600790068 /* CustomizeUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED1A1DE4535600790068 /* CustomizeUIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		67B7ED051DE4524F00790068 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67B7ED061DE4524F00790068 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		67B7ED071DE4524F00790068 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		67B7ED0A1DE452FF00790068 /* AuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationViewController.h; sourceTree = "<group>"; };
+		67B7ED0B1DE452FF00790068 /* AuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationViewController.m; sourceTree = "<group>"; };
+		67B7ED0D1DE4531500790068 /* TimeIntervalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeIntervalViewController.h; sourceTree = "<group>"; };
+		67B7ED0E1DE4531500790068 /* TimeIntervalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeIntervalViewController.m; sourceTree = "<group>"; };
+		67B7ED101DE4532800790068 /* ManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagementViewController.h; sourceTree = "<group>"; };
+		67B7ED111DE4532800790068 /* ManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagementViewController.m; sourceTree = "<group>"; };
+		67B7ED131DE4533900790068 /* ActionableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionableViewController.h; sourceTree = "<group>"; };
+		67B7ED141DE4533900790068 /* ActionableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionableViewController.m; sourceTree = "<group>"; };
+		67B7ED161DE4534700790068 /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
+		67B7ED171DE4534700790068 /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
+		67B7ED191DE4535600790068 /* CustomizeUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizeUIViewController.h; sourceTree = "<group>"; };
+		67B7ED1A1DE4535600790068 /* CustomizeUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizeUIViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +117,18 @@
 		67B7ED031DE4524F00790068 /* DetailViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				67B7ED0A1DE452FF00790068 /* AuthorizationViewController.h */,
+				67B7ED0B1DE452FF00790068 /* AuthorizationViewController.m */,
+				67B7ED0D1DE4531500790068 /* TimeIntervalViewController.h */,
+				67B7ED0E1DE4531500790068 /* TimeIntervalViewController.m */,
+				67B7ED101DE4532800790068 /* ManagementViewController.h */,
+				67B7ED111DE4532800790068 /* ManagementViewController.m */,
+				67B7ED131DE4533900790068 /* ActionableViewController.h */,
+				67B7ED141DE4533900790068 /* ActionableViewController.m */,
+				67B7ED161DE4534700790068 /* MediaViewController.h */,
+				67B7ED171DE4534700790068 /* MediaViewController.m */,
+				67B7ED191DE4535600790068 /* CustomizeUIViewController.h */,
+				67B7ED1A1DE4535600790068 /* CustomizeUIViewController.m */,
 			);
 			path = DetailViewControllers;
 			sourceTree = "<group>";
@@ -183,9 +213,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B7ED0C1DE452FF00790068 /* AuthorizationViewController.m in Sources */,
+				67B7ED1B1DE4535600790068 /* CustomizeUIViewController.m in Sources */,
+				67B7ED121DE4532800790068 /* ManagementViewController.m in Sources */,
 				67B7ECEF1DE44EDE00790068 /* AppDelegate.m in Sources */,
+				67B7ED0F1DE4531500790068 /* TimeIntervalViewController.m in Sources */,
 				67B7ED081DE4524F00790068 /* main.m in Sources */,
+				67B7ED151DE4533900790068 /* ActionableViewController.m in Sources */,
 				67B7ED091DE4524F00790068 /* ViewController.m in Sources */,
+				67B7ED181DE4534700790068 /* MediaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
