@@ -29,7 +29,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无授权" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XI-gS-Yze">
-                                                    <rect key="frame" x="8" y="11.5" width="326" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="326" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -50,14 +50,14 @@
                             <tableViewSection headerTitle="通知项目" id="3By-ax-Lg0">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="gWj-zO-cNq">
-                                        <rect key="frame" x="0.0" y="156" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="157" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gWj-zO-cNq" id="x5G-hf-1wO">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间间隔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQj-kt-8tB">
-                                                    <rect key="frame" x="8" y="11.5" width="326" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="326" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -74,14 +74,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="c4Z-Ke-ZIk">
-                                        <rect key="frame" x="0.0" y="200" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="201" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c4Z-Ke-ZIk" id="HgL-Ae-vvE">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可在前台显示的通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybh-7H-u1c">
-                                                    <rect key="frame" x="8" y="11.5" width="326" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="326" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -98,14 +98,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="kXB-jh-XBj">
-                                        <rect key="frame" x="0.0" y="244" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="245" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kXB-jh-XBj" id="ioc-xP-Oer">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通知管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opt-RA-Shs">
-                                                    <rect key="frame" x="8" y="11.5" width="326" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="326" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -122,14 +122,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="tbN-vn-Ct2">
-                                        <rect key="frame" x="0.0" y="288" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="289" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tbN-vn-Ct2" id="n3q-5P-NtO">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通知操作与处理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1t-v4-PPP">
-                                                    <rect key="frame" x="8" y="11.5" width="326" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="326" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -146,14 +146,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Vkg-ub-JDd">
-                                        <rect key="frame" x="0.0" y="332" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="333" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vkg-ub-JDd" id="i8G-cc-wJ5">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="多媒体通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAp-JL-8QR">
-                                                    <rect key="frame" x="8" y="11.5" width="326" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="326" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -170,14 +170,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="qkO-r5-j1s">
-                                        <rect key="frame" x="0.0" y="376" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="377" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qkO-r5-j1s" id="ihI-Ci-6RG">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自定义UI的通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odu-4l-KkY">
-                                                    <rect key="frame" x="8" y="11.5" width="326" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="326" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -279,10 +279,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KQH-mj-vxk">
-                                <rect key="frame" x="8" y="94.5" width="359" height="311"/>
+                                <rect key="frame" x="8" y="95" width="359" height="313"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="pqK-Dm-gJh">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="66.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="67"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="展现之前移除" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDt-Zz-ADk">
                                                 <rect key="frame" x="0.0" y="0.0" width="359" height="18"/>
@@ -291,13 +291,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送一个通知，在展示到屏幕之前取消它." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5v6-1L-dID">
-                                                <rect key="frame" x="0.0" y="20" width="359" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="20" width="359" height="15"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnB-ce-2ku">
-                                                <rect key="frame" x="0.0" y="36.5" width="359" height="30"/>
+                                                <rect key="frame" x="0.0" y="37" width="359" height="30"/>
                                                 <state key="normal" title="点我发送"/>
                                                 <connections>
                                                     <action selector="pendingRemovalPressed:" destination="2qQ-FW-EZv" eventType="touchUpInside" id="B8H-cv-eY2"/>
@@ -306,7 +306,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ig1-jc-g1p">
-                                        <rect key="frame" x="0.0" y="81.5" width="359" height="66.5"/>
+                                        <rect key="frame" x="0.0" y="82" width="359" height="67"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="展现之前更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnC-34-pcG">
                                                 <rect key="frame" x="0.0" y="0.0" width="359" height="18"/>
@@ -315,13 +315,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送一个title为1的通知，然后在它展示出来之前修改为2。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJ1-xI-6hW">
-                                                <rect key="frame" x="0.0" y="20" width="359" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="20" width="359" height="15"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqs-ue-s4I">
-                                                <rect key="frame" x="0.0" y="36.5" width="359" height="30"/>
+                                                <rect key="frame" x="0.0" y="37" width="359" height="30"/>
                                                 <state key="normal" title="点我发送"/>
                                                 <connections>
                                                     <action selector="pendingUpdatePressed:" destination="2qQ-FW-EZv" eventType="touchUpInside" id="DEt-Ls-MaE"/>
@@ -330,7 +330,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5A3-ed-gVZ">
-                                        <rect key="frame" x="0.0" y="163" width="359" height="66.5"/>
+                                        <rect key="frame" x="0.0" y="164" width="359" height="67"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="展现后移除" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iji-fW-BDv">
                                                 <rect key="frame" x="0.0" y="0.0" width="359" height="18"/>
@@ -339,13 +339,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送一个通知并展示出来，之后从通知中心移除。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEW-Bw-9rg">
-                                                <rect key="frame" x="0.0" y="20" width="359" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="20" width="359" height="15"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsw-Ku-qz2">
-                                                <rect key="frame" x="0.0" y="36.5" width="359" height="30"/>
+                                                <rect key="frame" x="0.0" y="37" width="359" height="30"/>
                                                 <state key="normal" title="点我发送"/>
                                                 <connections>
                                                     <action selector="deliveredRemovalPressed:" destination="2qQ-FW-EZv" eventType="touchUpInside" id="4Ig-Sn-PPS"/>
@@ -354,7 +354,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="1t1-Fm-GOT">
-                                        <rect key="frame" x="0.0" y="244.5" width="359" height="66.5"/>
+                                        <rect key="frame" x="0.0" y="246" width="359" height="67"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="展现后更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdO-Dt-KCK">
                                                 <rect key="frame" x="0.0" y="0.0" width="359" height="18"/>
@@ -363,13 +363,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送一个title为1的通知，在它展示到屏幕上之后修改为2。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Du1-2U-khz">
-                                                <rect key="frame" x="0.0" y="20" width="359" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="20" width="359" height="15"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPJ-fY-63e">
-                                                <rect key="frame" x="0.0" y="36.5" width="359" height="30"/>
+                                                <rect key="frame" x="0.0" y="37" width="359" height="30"/>
                                                 <state key="normal" title="点我发送"/>
                                                 <connections>
                                                     <action selector="deliveredUpdatePressed:" destination="2qQ-FW-EZv" eventType="touchUpInside" id="NGJ-h9-q11"/>
@@ -380,7 +380,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击&quot;发送&quot;按钮, 然后锁定屏幕来看发生的情况" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5x-4n-uAh">
-                                <rect key="frame" x="16" y="72" width="343" height="14.5"/>
+                                <rect key="frame" x="16" y="72" width="343" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -420,7 +420,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16M-EN-XYv">
-                                <rect key="frame" x="157" y="120.5" width="62" height="30"/>
+                                <rect key="frame" x="157" y="121" width="62" height="30"/>
                                 <state key="normal" title="点我发送"/>
                                 <connections>
                                     <action selector="notificationButtonPressed:" destination="liC-uG-ub9" eventType="touchUpInside" id="d2D-EU-mHE"/>
@@ -454,25 +454,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Token" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOO-eE-Uv8">
-                                <rect key="frame" x="136" y="107" width="103" height="20.5"/>
+                                <rect key="frame" x="136" y="107" width="103" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="blo-8A-uGf">
-                                <rect key="frame" x="16" y="135.5" width="343" height="16"/>
+                                <rect key="frame" x="16" y="136" width="343" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAq-IQ-6S8">
-                                <rect key="frame" x="170.5" y="171.5" width="35" height="20.5"/>
+                                <rect key="frame" x="170" y="172" width="35" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="z5T-iC-vmW">
-                                <rect key="frame" x="16" y="206.5" width="343" height="160"/>
+                                <rect key="frame" x="16" y="208" width="343" height="160"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QwF-dw-zEj">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="16"/>
@@ -613,20 +613,12 @@
                     <navigationItem key="navigationItem" title="授权状态" id="7ai-EQ-ine">
                         <barButtonItem key="rightBarButtonItem" title="请求用户" id="UoJ-8p-Zra">
                             <connections>
-                                <action selector="requestButtonPressed:" destination="few-nw-AK9" id="vF8-dH-fxF"/>
+                                <action selector="requestBtnOnClick:" destination="few-nw-AK9" id="OWW-Tw-RIq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="alertSettingLabel" destination="0zx-Lk-WEc" id="T3C-34-w0C"/>
-                        <outlet property="alertStyleSettingLabel" destination="xsT-36-LDw" id="pXk-lK-H3g"/>
-                        <outlet property="badgeSettingLabel" destination="xyW-yC-Zvi" id="X7F-51-HAq"/>
-                        <outlet property="carPlaySettingLabel" destination="Hzn-b1-SCF" id="Ji3-fg-LmI"/>
-                        <outlet property="deviceTokenLabel" destination="blo-8A-uGf" id="YtV-lX-tSa"/>
-                        <outlet property="lockScreenSettingLabel" destination="kK6-y8-jOR" id="WLb-hf-Jt3"/>
-                        <outlet property="notificationCenterSettingLabel" destination="ac3-dy-l4f" id="Vuq-bg-CRo"/>
                         <outlet property="settingsView" destination="z5T-iC-vmW" id="6UY-Yz-mHB"/>
-                        <outlet property="soundSettingLabel" destination="Xub-3x-0ig" id="xS5-FM-VSR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9B2-xK-1Th" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -646,7 +638,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7l-ss-fRU">
-                                <rect key="frame" x="157" y="120.5" width="62" height="30"/>
+                                <rect key="frame" x="157" y="121" width="62" height="30"/>
                                 <state key="normal" title="点我发送"/>
                                 <connections>
                                     <action selector="notificationButtonPressed:" destination="w5C-zF-DsH" eventType="touchUpInside" id="pvF-dW-Fr4"/>
@@ -686,7 +678,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOb-GV-4WY">
-                                <rect key="frame" x="157" y="120.5" width="62" height="30"/>
+                                <rect key="frame" x="157" y="121" width="62" height="30"/>
                                 <state key="normal" title="点我发送"/>
                                 <connections>
                                     <action selector="notificationButtonPressed:" destination="9Gr-Tc-4eV" eventType="touchUpInside" id="fR3-Ke-2DE"/>
