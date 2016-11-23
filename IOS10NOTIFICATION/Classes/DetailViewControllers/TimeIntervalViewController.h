@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NotificationHandler.h"
 
 @interface TimeIntervalViewController : UIViewController
+@property (nonatomic, assign) UserNotificationType notificationType;
 
 @end

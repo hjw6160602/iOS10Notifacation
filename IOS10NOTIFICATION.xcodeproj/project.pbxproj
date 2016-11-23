@@ -20,6 +20,7 @@
 		67B7ED181DE4534700790068 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED171DE4534700790068 /* MediaViewController.m */; };
 		67B7ED1B1DE4535600790068 /* CustomizeUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED1A1DE4535600790068 /* CustomizeUIViewController.m */; };
 		67EAEEAA1DE58ACC00BE4EFC /* UIAlertController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EAEEA91DE58ACC00BE4EFC /* UIAlertController+Extension.m */; };
+		67EAEEAD1DE5A1BB00BE4EFC /* NotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EAEEAC1DE5A1BB00BE4EFC /* NotificationHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		67B7ED1A1DE4535600790068 /* CustomizeUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizeUIViewController.m; sourceTree = "<group>"; };
 		67EAEEA81DE58ACC00BE4EFC /* UIAlertController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Extension.h"; sourceTree = "<group>"; };
 		67EAEEA91DE58ACC00BE4EFC /* UIAlertController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Extension.m"; sourceTree = "<group>"; };
+		67EAEEAB1DE5A1BB00BE4EFC /* NotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandler.h; sourceTree = "<group>"; };
+		67EAEEAC1DE5A1BB00BE4EFC /* NotificationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 		67B7ED041DE4524F00790068 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				67EAEEAB1DE5A1BB00BE4EFC /* NotificationHandler.h */,
+				67EAEEAC1DE5A1BB00BE4EFC /* NotificationHandler.m */,
 				67B7ED051DE4524F00790068 /* main.m */,
 			);
 			path = Others;
@@ -226,6 +231,7 @@
 				67B7ED0F1DE4531500790068 /* TimeIntervalViewController.m in Sources */,
 				67B7ED081DE4524F00790068 /* main.m in Sources */,
 				67B7ED151DE4533900790068 /* ActionableViewController.m in Sources */,
+				67EAEEAD1DE5A1BB00BE4EFC /* NotificationHandler.m in Sources */,
 				67B7ED091DE4524F00790068 /* ViewController.m in Sources */,
 				67B7ED181DE4534700790068 /* MediaViewController.m in Sources */,
 			);

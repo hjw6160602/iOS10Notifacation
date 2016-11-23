@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AuthorizationViewController.h"
+#import "TimeIntervalViewController.h"
 #import <UserNotifications/UserNotifications.h>
 
 typedef NS_ENUM(NSInteger, SegueIdentity) {
@@ -55,20 +56,24 @@ typedef NS_ENUM(NSInteger, SegueIdentity) {
                 vc.settings = self.settings;
 //        vc.deviceToken = UserDefaults.standard.object(forKey: "push-token") as? String
             } else{
-                NSLog(@"The destination should be AuthorizationViewController");
+                NSLog(@"目标控制器应当是\"AuthorizationViewController\"");
             }
             break;
         case SegueIdentityShowTimeInterval:
-//        guard let vc = segue.destination as? TimeIntervalViewController else {
-//            fatalError("The destination should be TimeIntervalViewController")
-//        }
-//        vc.notificationType = .timeInterval
+            if ([segue.destinationViewController isKindOfClass:[TimeIntervalViewController class]]) {
+                TimeIntervalViewController *vc = segue.destinationViewController;
+                vc.notificationType = UserNotificationTypeTimeInterval;
+            } else{
+                NSLog(@"目标控制器应当是\"TimeIntervalViewController\"");
+            }
             break;
         case SegueIdentityShowTimeIntervalForeground:
-//        guard let vc = segue.destination as? TimeIntervalViewController else {
-//            fatalError("The destination should be TimeIntervalViewController")
-//        }
-//        vc.notificationType = .timeIntervalForeground
+            if ([segue.destinationViewController isKindOfClass:[TimeIntervalViewController class]]) {
+                TimeIntervalViewController *vc = segue.destinationViewController;
+                vc.notificationType = UserNotificationTypeTimeIntervalForeground;
+            } else{
+                NSLog(@"目标控制器应当是\"TimeIntervalViewController\"");
+            }
             break;
         case SegueIdentityShowManagement: break;
         case SegueIdentityShowActionable:break;

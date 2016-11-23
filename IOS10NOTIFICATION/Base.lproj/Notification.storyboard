@@ -213,7 +213,7 @@
         <!--时间间隔-->
         <scene sceneID="NEf-xi-Iv5">
             <objects>
-                <viewController title="时间间隔" id="UaK-Py-GIA" customClass="TimeIntervalViewController" customModule="IOS10NOTIFICATION" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="时间间隔" id="UaK-Py-GIA" customClass="TimeIntervalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1yp-if-F2f"/>
                         <viewControllerLayoutGuide type="bottom" id="i6R-tV-CnT"/>
@@ -260,10 +260,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="descriptionLabel" destination="I9p-6c-AwM" id="GaU-cn-MC1"/>
-                        <outlet property="timeTextField" destination="FzH-9s-8Ar" id="gSv-Cm-wjR"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RGt-h0-pHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
