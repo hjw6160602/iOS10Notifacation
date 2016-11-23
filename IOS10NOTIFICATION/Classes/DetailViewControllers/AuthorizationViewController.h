@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class UNNotificationSettings;
 
 @interface AuthorizationViewController : UIViewController
+
+@property (nonatomic, copy) NSString *deviceToken;
+
+@property (nonatomic, strong) UNNotificationSettings *settings;
 
 @end

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		67B7ECEF1DE44EDE00790068 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ECEE1DE44EDE00790068 /* AppDelegate.m */; };
-		67B7ECF51DE44EDE00790068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B7ECF31DE44EDE00790068 /* Main.storyboard */; };
+		67B7ECF51DE44EDE00790068 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B7ECF31DE44EDE00790068 /* Notification.storyboard */; };
 		67B7ECF71DE44EDE00790068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B7ECF61DE44EDE00790068 /* Assets.xcassets */; };
 		67B7ECFA1DE44EDE00790068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B7ECF81DE44EDE00790068 /* LaunchScreen.storyboard */; };
 		67B7ED081DE4524F00790068 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED051DE4524F00790068 /* main.m */; };
@@ -19,13 +19,14 @@
 		67B7ED151DE4533900790068 /* ActionableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED141DE4533900790068 /* ActionableViewController.m */; };
 		67B7ED181DE4534700790068 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED171DE4534700790068 /* MediaViewController.m */; };
 		67B7ED1B1DE4535600790068 /* CustomizeUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED1A1DE4535600790068 /* CustomizeUIViewController.m */; };
+		67EAEEAA1DE58ACC00BE4EFC /* UIAlertController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EAEEA91DE58ACC00BE4EFC /* UIAlertController+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67B7ECE71DE44EDE00790068 /* IOS10NOTIFICATION.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS10NOTIFICATION.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B7ECED1DE44EDE00790068 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		67B7ECEE1DE44EDE00790068 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		67B7ECF41DE44EDE00790068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		67B7ECF41DE44EDE00790068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Notification.storyboard; sourceTree = "<group>"; };
 		67B7ECF61DE44EDE00790068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67B7ECF91DE44EDE00790068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67B7ECFB1DE44EDE00790068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +45,8 @@
 		67B7ED171DE4534700790068 /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
 		67B7ED191DE4535600790068 /* CustomizeUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizeUIViewController.h; sourceTree = "<group>"; };
 		67B7ED1A1DE4535600790068 /* CustomizeUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizeUIViewController.m; sourceTree = "<group>"; };
+		67EAEEA81DE58ACC00BE4EFC /* UIAlertController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Extension.h"; sourceTree = "<group>"; };
+		67EAEEA91DE58ACC00BE4EFC /* UIAlertController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +88,7 @@
 		67B7ECEA1DE44EDE00790068 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				67B7ECF31DE44EDE00790068 /* Main.storyboard */,
+				67B7ECF31DE44EDE00790068 /* Notification.storyboard */,
 				67B7ECF61DE44EDE00790068 /* Assets.xcassets */,
 				67B7ECF81DE44EDE00790068 /* LaunchScreen.storyboard */,
 				67B7ECFB1DE44EDE00790068 /* Info.plist */,
@@ -110,6 +113,8 @@
 		67B7ED021DE4524F00790068 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				67EAEEA81DE58ACC00BE4EFC /* UIAlertController+Extension.h */,
+				67EAEEA91DE58ACC00BE4EFC /* UIAlertController+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -202,7 +207,7 @@
 			files = (
 				67B7ECFA1DE44EDE00790068 /* LaunchScreen.storyboard in Resources */,
 				67B7ECF71DE44EDE00790068 /* Assets.xcassets in Resources */,
-				67B7ECF51DE44EDE00790068 /* Main.storyboard in Resources */,
+				67B7ECF51DE44EDE00790068 /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +220,7 @@
 			files = (
 				67B7ED0C1DE452FF00790068 /* AuthorizationViewController.m in Sources */,
 				67B7ED1B1DE4535600790068 /* CustomizeUIViewController.m in Sources */,
+				67EAEEAA1DE58ACC00BE4EFC /* UIAlertController+Extension.m in Sources */,
 				67B7ED121DE4532800790068 /* ManagementViewController.m in Sources */,
 				67B7ECEF1DE44EDE00790068 /* AppDelegate.m in Sources */,
 				67B7ED0F1DE4531500790068 /* TimeIntervalViewController.m in Sources */,
@@ -228,12 +234,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		67B7ECF31DE44EDE00790068 /* Main.storyboard */ = {
+		67B7ECF31DE44EDE00790068 /* Notification.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				67B7ECF41DE44EDE00790068 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Notification.storyboard;
 			sourceTree = "<group>";
 		};
 		67B7ECF81DE44EDE00790068 /* LaunchScreen.storyboard */ = {
