@@ -138,7 +138,7 @@ typedef NS_ENUM(NSInteger, NotiPresentType){
 // __IOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0) __TVOS_PROHIBITED
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler{
     [self descriptonOfNoti:response.notification presentType:NotiPresentTypeBackground];
-    completionHandler();  // 系统要求执行这个方法
+    completionHandler();  // 交给系统来处理执行收到通知之后的操作
 }
 
 - (void)descriptonOfNoti:(UNNotification *)noti presentType:(NotiPresentType)type{
@@ -161,8 +161,5 @@ typedef NS_ENUM(NSInteger, NotiPresentType){
         NSLog(@"%@收到本地通知:\n{\n    body:%@,\n    title:%@,\n    subtitle:%@,\n    badge：%@,\n    sound：%@,\n    userInfo：%@\n}",presentType,body,title,subtitle,badge,sound,userInfo);
     }
 }
-
-
-
 
 @end

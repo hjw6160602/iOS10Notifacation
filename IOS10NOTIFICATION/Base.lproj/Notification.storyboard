@@ -272,7 +272,7 @@
         <!--Management View Controller-->
         <scene sceneID="Ect-KW-DWB">
             <objects>
-                <viewController id="2qQ-FW-EZv" customClass="ManagementViewController" customModule="IOS10NOTIFICATION" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2qQ-FW-EZv" customClass="ManagementViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tRy-ew-Ohf"/>
                         <viewControllerLayoutGuide type="bottom" id="gjg-X4-cff"/>
@@ -303,7 +303,7 @@
                                                 <rect key="frame" x="0.0" y="36.5" width="359" height="30"/>
                                                 <state key="normal" title="点我发送"/>
                                                 <connections>
-                                                    <action selector="pendingRemovalPressed:" destination="2qQ-FW-EZv" eventType="touchUpInside" id="B8H-cv-eY2"/>
+                                                    <action selector="pendingRemovalOnClick:" destination="2qQ-FW-EZv" eventType="touchUpInside" id="WTO-7Y-ant"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -327,7 +327,7 @@
                                                 <rect key="frame" x="0.0" y="36.5" width="359" height="30"/>
                                                 <state key="normal" title="点我发送"/>
                                                 <connections>
-                                                    <action selector="pendingUpdatePressed:" destination="2qQ-FW-EZv" eventType="touchUpInside" id="DEt-Ls-MaE"/>
+                                                    <action selector="pendingUpdatePressed:" destination="2qQ-FW-EZv" eventType="touchUpInside" id="lE2-hO-jMT"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -351,7 +351,7 @@
                                                 <rect key="frame" x="0.0" y="36.5" width="359" height="30"/>
                                                 <state key="normal" title="点我发送"/>
                                                 <connections>
-                                                    <action selector="deliveredRemovalPressed:" destination="2qQ-FW-EZv" eventType="touchUpInside" id="4Ig-Sn-PPS"/>
+                                                    <action selector="deliveredRemovalPressed:" destination="2qQ-FW-EZv" eventType="touchUpInside" id="3oU-fy-Jjn"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -375,7 +375,7 @@
                                                 <rect key="frame" x="0.0" y="36.5" width="359" height="30"/>
                                                 <state key="normal" title="点我发送"/>
                                                 <connections>
-                                                    <action selector="deliveredUpdatePressed:" destination="2qQ-FW-EZv" eventType="touchUpInside" id="NGJ-h9-q11"/>
+                                                    <action selector="deliveredUpdatePressed:" destination="2qQ-FW-EZv" eventType="touchUpInside" id="Ak1-ge-0AY"/>
                                                 </connections>
                                             </button>
                                         </subviews>
