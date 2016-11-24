@@ -8,7 +8,7 @@
 
 #import "NotificationHandler.h"
 #import "NSDictionary+Extension.h"
-
+#import "UIAlertController+Extension.h"
 
 typedef NS_ENUM(NSInteger, NotiPresentType){
     NotiPresentTypeForeground = 0,
@@ -92,6 +92,48 @@ typedef NS_ENUM(NSInteger, NotiPresentType){
     return rawType.integerValue;
 }
 
+
++ (NSString *)categoryRawValue:(UserNotificationCategoryType)categoryType{
+    switch (categoryType) {
+        case UserNotificationCategoryTypeSaySomething:
+            return @"saySomething1";
+            break;
+        case UserNotificationCategoryTypeCustomUI:
+            return @"CustomUI2";
+            break;
+        default:
+            return @"";
+            break;
+    }
+}
+
++ (NSString *)saySomethingRawValue:(SaySomethingCategoryAction)categoryType{
+    switch (categoryType) {
+        case SaySomethingCategoryActionInput:
+            return @"input1";
+            break;
+        case SaySomethingCategoryActionGoodbye:
+            return @"goodbye2";
+            break;
+        case SaySomethingCategoryActionNone:
+            return @"none3";
+            break;
+        default:
+            return @"";
+            break;
+    }
+}
+
++ (UserNotificationCategoryType)notiCategoryTypeWithRawValue:(NSString *)rawValue{
+    NSString *rawType = [rawValue substringFromIndex:rawValue.length - 1];
+    return rawType.integerValue;
+}
+
++ (SaySomethingCategoryAction)categoryActionWithRawValue:(NSString *)rawValue{
+    NSString *rawType = [rawValue substringFromIndex:rawValue.length - 1];
+    return rawType.integerValue;
+}
+
 #pragma mark - <UNUserNotificationCenterDelegate>
 //__IOS_AVAILABLE(10.0) __TVOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0)
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
@@ -138,7 +180,49 @@ typedef NS_ENUM(NSInteger, NotiPresentType){
 // __IOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0) __TVOS_PROHIBITED
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler{
     [self descriptonOfNoti:response.notification presentType:NotiPresentTypeBackground];
+    
+    UserNotificationCategoryType categoryType = [NotificationHandler notiCategoryTypeWithRawValue:response.notification.request.content.categoryIdentifier];
+    
+    switch (categoryType) {
+        case UserNotificationCategoryTypeSaySomething:
+            [self handleSaySomthing:response];
+            break;
+        case UserNotificationCategoryTypeCustomUI:
+            [self handleCustomUI:response];
+            break;
+        default:
+            break;
+    }
     completionHandler();  // 交给系统来处理执行收到通知之后的操作
+}
+
+
+- (void)handleSaySomthing:(UNNotificationResponse *)response{
+    NSString *text = @"";
+    SaySomethingCategoryAction actionType = [NotificationHandler categoryActionWithRawValue:response.actionIdentifier];
+    
+    if (actionType) {
+        switch (actionType) {
+            case SaySomethingCategoryActionInput:
+                text = [(UNTextInputNotificationResponse *)response userText];
+                break;
+            case SaySomethingCategoryActionGoodbye:
+                text = @"再见";
+                break;
+            case SaySomethingCategoryActionNone:
+                text = @"";
+                break;
+            default:
+                break;
+        }
+    }
+    if (text.length > 0) {
+        [UIAlertController showConfirmAlertFromTopViewControllerWithMessage:[NSString stringWithFormat:@"你刚刚说：\"%@\" ", text]];
+    }
+}
+
+- (void)handleCustomUI:(UNNotificationResponse *)response{
+    
 }
 
 - (void)descriptonOfNoti:(UNNotification *)noti presentType:(NotiPresentType)type{

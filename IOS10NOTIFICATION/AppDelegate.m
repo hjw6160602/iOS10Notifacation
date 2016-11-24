@@ -19,56 +19,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [self registerNotificationCategory];
+    [self registerNotificationCategory];
     self.notificationHandler = (id)[[NotificationHandler alloc]init];
     [UNUserNotificationCenter currentNotificationCenter].delegate = self.notificationHandler;
     return YES;
 }
 
 - (void)registerNotificationCategory{
-//    let saySomethingCategory: UNNotificationCategory = {
-//        
-//        let inputAction = UNTextInputNotificationAction(
-//                                                        identifier: SaySomethingCategoryAction.input.rawValue,
-//                                                        title: "Input",
-//                                                        options: [.foreground],
-//                                                        textInputButtonTitle: "Send",
-//                                                        textInputPlaceholder: "你想说什么...")
-//        
-//        let goodbyeAction = UNNotificationAction(
-//                                                 identifier: SaySomethingCategoryAction.goodbye.rawValue,
-//                                                 title: "再见",
-//                                                 options: [.foreground])
-//        
-//        let cancelAction = UNNotificationAction(
-//                                                identifier: SaySomethingCategoryAction.none.rawValue,
-//                                                title: "取消",
-//                                                options: [.destructive])
-//        
-//        return UNNotificationCategory(identifier: UserNotificationCategoryType.saySomething.rawValue, actions: [inputAction, goodbyeAction, cancelAction], intentIdentifiers: [], options: [.customDismissAction])
-//    }()
     
-//    let customUICategory: UNNotificationCategory = {
-//        let nextAction = UNNotificationAction(
-//                                              identifier: CustomizeUICategoryAction.switch.rawValue,
-//                                              title: "切换",
-//                                              options: [])
-//        let openAction = UNNotificationAction(
-//                                              identifier: CustomizeUICategoryAction.open.rawValue,
-//                                              title: "打开",
-//                                              options: [.foreground])
-//        let dismissAction = UNNotificationAction(
-//                                                 identifier: CustomizeUICategoryAction.dismiss.rawValue,
-//                                                 title: "忽略",
-//                                                 options: [.destructive])
-//        return UNNotificationCategory(identifier: UserNotificationCategoryType.customUI.rawValue, actions: [nextAction, openAction, dismissAction], intentIdentifiers: [], options: [])
-//    }()
-//    NSSet<UNNotificationCategory *> *categories
-//    
-//    
-//    
-//    [[UNUserNotificationCenter currentNotificationCenter] setNotificationCategories:];
-//    UNUserNotificationCenter.current().setNotificationCategories([saySomethingCategory, customUICategory])
+    //注册Action
+    NSString *inputActionId = [NotificationHandler saySomethingRawValue:SaySomethingCategoryActionInput];
+    UNTextInputNotificationAction *inputAction = [UNTextInputNotificationAction actionWithIdentifier:inputActionId title:@"输入" options: UNNotificationActionOptionForeground textInputButtonTitle:@"发送" textInputPlaceholder:@"你想说什么..."];
+    
+    NSString *goodbyeActionId = [NotificationHandler saySomethingRawValue:SaySomethingCategoryActionGoodbye];
+    UNNotificationAction *goodbyeAction = [UNNotificationAction actionWithIdentifier:goodbyeActionId title:@"再见" options:UNNotificationActionOptionForeground];
+    
+    NSString *cancelActionId = [NotificationHandler saySomethingRawValue:SaySomethingCategoryActionNone];
+    UNNotificationAction *cancelAction = [UNNotificationAction actionWithIdentifier:cancelActionId title:@"取消" options:UNNotificationActionOptionForeground];
+    
+    //注册Category
+    NSString *Identifier = [NotificationHandler categoryRawValue:UserNotificationCategoryTypeSaySomething];
+    UNNotificationCategory *saySomethingCategory = [UNNotificationCategory categoryWithIdentifier:Identifier actions:@[inputAction, goodbyeAction, cancelAction] intentIdentifiers:@[] options:UNNotificationCategoryOptionCustomDismissAction];
+    
+    //将类别集合注册 进入通知中心
+    NSSet *categorySet = [NSSet setWithObjects:saySomethingCategory, nil];
+    [[UNUserNotificationCenter currentNotificationCenter] setNotificationCategories:categorySet];
 
 }
 

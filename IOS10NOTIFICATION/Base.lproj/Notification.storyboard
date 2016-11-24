@@ -128,7 +128,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通知操作与处理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1t-v4-PPP">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可操作通知与处理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1t-v4-PPP">
                                                     <rect key="frame" x="8" y="11" width="326" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -407,7 +407,7 @@
         <!--Actionable View Controller-->
         <scene sceneID="51Y-aI-UNX">
             <objects>
-                <viewController id="liC-uG-ub9" customClass="ActionableViewController" customModule="IOS10NOTIFICATION" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="liC-uG-ub9" customClass="ActionableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qZm-MF-Z5Q"/>
                         <viewControllerLayoutGuide type="bottom" id="ApK-S5-17V"/>
@@ -426,7 +426,7 @@
                                 <rect key="frame" x="157" y="121" width="62" height="30"/>
                                 <state key="normal" title="点我发送"/>
                                 <connections>
-                                    <action selector="notificationButtonPressed:" destination="liC-uG-ub9" eventType="touchUpInside" id="d2D-EU-mHE"/>
+                                    <action selector="notificationButtonPressed:" destination="liC-uG-ub9" eventType="touchUpInside" id="StN-Bk-SmB"/>
                                 </connections>
                             </button>
                         </subviews>

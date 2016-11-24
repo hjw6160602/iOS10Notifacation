@@ -22,6 +22,24 @@ typedef NS_ENUM(NSUInteger, UserNotificationType){
     UserNotificationTypeCustomUI = 9
 };
 
+typedef NS_ENUM(NSUInteger, UserNotificationCategoryType){
+    UserNotificationCategoryTypeSaySomething = 1,
+    UserNotificationCategoryTypeCustomUI = 2
+};
+
+
+typedef NS_ENUM(NSUInteger, SaySomethingCategoryAction){
+    SaySomethingCategoryActionInput = 1,
+    SaySomethingCategoryActionGoodbye = 2,
+    SaySomethingCategoryActionNone = 3
+};
+
+typedef NS_ENUM(NSUInteger, CustomizeUICategoryAction){
+    CustomizeUICategoryActionSwitch = 0,
+    CustomizeUICategoryActionOpen,
+    CustomizeUICategoryActionDismiss
+};
+
 
 @interface NotificationHandler : NSObject
 
@@ -30,4 +48,13 @@ typedef NS_ENUM(NSUInteger, UserNotificationType){
 + (NSString *)userNotiTitle:(UserNotificationType)notiType;
 
 + (NSString *)userNotiRawValue:(UserNotificationType)notiType;
+
++ (NSString *)categoryRawValue:(UserNotificationCategoryType)categoryType;
+
++ (NSString *)saySomethingRawValue:(SaySomethingCategoryAction)categoryType;
+
++ (UserNotificationCategoryType)notiCategoryTypeWithRawValue:(NSString *)rawValue;
+
++ (SaySomethingCategoryAction)categoryActionWithRawValue:(NSString *)rawValue;
+
 @end
