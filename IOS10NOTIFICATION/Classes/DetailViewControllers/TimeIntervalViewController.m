@@ -38,17 +38,14 @@
     
     UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc]init];
     
-    // Create notification content
     content.title = @"时间戳通知";
     content.body = @"我的第一条通知";
     
-    // Create a trigger to decide when/where to present the notification
     UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:timeInterval repeats:NO];
     
-    // Create an identifier for this notification. So you could manage it later.
     NSString *requestIdentifier = [NotificationHandler userNotiRawValue:self.notificationType];
     
-    // The request describes this notification.
+
     UNNotificationRequest *request =[UNNotificationRequest requestWithIdentifier:requestIdentifier content:content trigger:trigger];
     
     [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
