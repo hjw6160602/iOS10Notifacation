@@ -639,7 +639,7 @@
         <!--Media View Controller-->
         <scene sceneID="O9b-Ox-Cji">
             <objects>
-                <viewController id="w5C-zF-DsH" customClass="MediaViewController" customModule="IOS10NOTIFICATION" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="w5C-zF-DsH" customClass="MediaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cRD-dj-dHd"/>
                         <viewControllerLayoutGuide type="bottom" id="JW0-SW-Dn3"/>
@@ -652,7 +652,7 @@
                                 <rect key="frame" x="157" y="121" width="62" height="30"/>
                                 <state key="normal" title="点我发送"/>
                                 <connections>
-                                    <action selector="notificationButtonPressed:" destination="w5C-zF-DsH" eventType="touchUpInside" id="pvF-dW-Fr4"/>
+                                    <action selector="notificationButtonPressed:" destination="w5C-zF-DsH" eventType="touchUpInside" id="xQ9-27-j3f"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送带有图片的通知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTN-g0-Yw2">

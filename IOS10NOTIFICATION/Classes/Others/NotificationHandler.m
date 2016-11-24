@@ -124,6 +124,23 @@ typedef NS_ENUM(NSInteger, NotiPresentType){
     }
 }
 
++ (NSString *)customUIRawValue:(CustomizeUICategoryAction)categoryType{
+    switch (categoryType) {
+        case CustomizeUICategoryActionSwitch:
+            return @"switch1";
+            break;
+        case CustomizeUICategoryActionOpen:
+            return @"open2";
+            break;
+        case CustomizeUICategoryActionDismiss:
+            return @"dismiss3";
+            break;
+        default:
+            return @"";
+            break;
+    }
+}
+
 + (UserNotificationCategoryType)notiCategoryTypeWithRawValue:(NSString *)rawValue{
     NSString *rawType = [rawValue substringFromIndex:rawValue.length - 1];
     return rawType.integerValue;
@@ -176,22 +193,22 @@ typedef NS_ENUM(NSInteger, NotiPresentType){
     completionHandler(options);
 }
 
-
 // __IOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0) __TVOS_PROHIBITED
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler{
     [self descriptonOfNoti:response.notification presentType:NotiPresentTypeBackground];
-    
-    UserNotificationCategoryType categoryType = [NotificationHandler notiCategoryTypeWithRawValue:response.notification.request.content.categoryIdentifier];
-    
-    switch (categoryType) {
-        case UserNotificationCategoryTypeSaySomething:
-            [self handleSaySomthing:response];
-            break;
-        case UserNotificationCategoryTypeCustomUI:
-            [self handleCustomUI:response];
-            break;
-        default:
-            break;
+    if (response.notification.request.content.categoryIdentifier.length > 0) {//判断是不是category类型的通知
+        UserNotificationCategoryType categoryType = [NotificationHandler notiCategoryTypeWithRawValue:response.notification.request.content.categoryIdentifier];
+        
+        switch (categoryType) {
+            case UserNotificationCategoryTypeSaySomething:
+                [self handleSaySomthing:response];
+                break;
+            case UserNotificationCategoryTypeCustomUI:
+                [self handleCustomUI:response];
+                break;
+            default:
+                break;
+        }
     }
     completionHandler();  // 交给系统来处理执行收到通知之后的操作
 }
@@ -222,7 +239,7 @@ typedef NS_ENUM(NSInteger, NotiPresentType){
 }
 
 - (void)handleCustomUI:(UNNotificationResponse *)response{
-    
+    NSLog(@"%@", response.actionIdentifier);
 }
 
 - (void)descriptonOfNoti:(UNNotification *)noti presentType:(NotiPresentType)type{

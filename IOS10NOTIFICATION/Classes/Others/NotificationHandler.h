@@ -35,9 +35,9 @@ typedef NS_ENUM(NSUInteger, SaySomethingCategoryAction){
 };
 
 typedef NS_ENUM(NSUInteger, CustomizeUICategoryAction){
-    CustomizeUICategoryActionSwitch = 0,
-    CustomizeUICategoryActionOpen,
-    CustomizeUICategoryActionDismiss
+    CustomizeUICategoryActionSwitch = 1,
+    CustomizeUICategoryActionOpen = 2,
+    CustomizeUICategoryActionDismiss = 3
 };
 
 
@@ -52,6 +52,8 @@ typedef NS_ENUM(NSUInteger, CustomizeUICategoryAction){
 + (NSString *)categoryRawValue:(UserNotificationCategoryType)categoryType;
 
 + (NSString *)saySomethingRawValue:(SaySomethingCategoryAction)categoryType;
+
++ (NSString *)customUIRawValue:(CustomizeUICategoryAction)categoryType;
 
 + (UserNotificationCategoryType)notiCategoryTypeWithRawValue:(NSString *)rawValue;
 

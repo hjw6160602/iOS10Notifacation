@@ -7,6 +7,9 @@
 //
 
 #import "MediaViewController.h"
+#import <UserNotifications/UserNotifications.h>
+#import "UIAlertController+Extension.h"
+#import "NotificationHandler.h"
 
 @interface MediaViewController ()
 
@@ -14,24 +17,38 @@
 
 @implementation MediaViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+- (IBAction)notificationButtonPressed:(id)sender {
+    UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc]init];
+
+    content.title = @"图片通知";
+    content.body = @"把图片给我显示出来!";
+    
+    NSArray *imageNames = @[@"image", @"onevcat"];
+    NSMutableArray *attachments = [NSMutableArray array];
+    for (NSString *imgName in imageNames) {
+        NSURL *imgURL = [[NSBundle mainBundle]URLForResource:imgName withExtension:@"jpg"];
+        NSString *identifier = [NSString stringWithFormat:@"image-%@",imgName];
+        UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:identifier URL:imgURL options:nil error:nil];
+        [attachments addObject:attachment];
+    }
+
+    
+    content.attachments = attachments;
+
+    
+    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:5 repeats:NO];
+    NSString *requestIdentifier = [NotificationHandler userNotiRawValue:UserNotificationTypeMedia];
+    
+    UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:requestIdentifier content:content trigger:trigger];
+    [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+        if (error) {
+            [UIAlertController showConfirmAlertWithMessage:error.localizedDescription Controller:self];
+        } else {
+            NSLog(@"自定义UI类型的通知:\"%@\"已经被安排发送:",requestIdentifier);
+        }
+    }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
