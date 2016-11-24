@@ -240,7 +240,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="点我发送"/>
                                 <connections>
-                                    <action selector="scheduleButtonPressed:" destination="UaK-Py-GIA" eventType="touchUpInside" id="Pjf-tB-qNA"/>
+                                    <action selector="scheduleButtonPressed:" destination="UaK-Py-GIA" eventType="touchUpInside" id="2c3-dY-Akn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="提示：你需要切换到后台才能看到通知 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9p-6c-AwM">
@@ -260,6 +260,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="I9p-6c-AwM" id="H8p-CO-q0R"/>
+                        <outlet property="timeTextField" destination="FzH-9s-8Ar" id="xWO-Nb-mG7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RGt-h0-pHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

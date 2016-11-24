@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "NotificationHandler.h"
+#import <UserNotifications/UserNotifications.h>
 
 @interface AppDelegate ()
+@property (nonatomic, nonnull, strong)id <UNUserNotificationCenterDelegate> notificationHandler;
 
 @end
 
@@ -16,11 +19,58 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+//    [self registerNotificationCategory];
+    self.notificationHandler = (id)[[NotificationHandler alloc]init];
+    [UNUserNotificationCenter currentNotificationCenter].delegate = self.notificationHandler;
     return YES;
 }
 
+- (void)registerNotificationCategory{
+//    let saySomethingCategory: UNNotificationCategory = {
+//        
+//        let inputAction = UNTextInputNotificationAction(
+//                                                        identifier: SaySomethingCategoryAction.input.rawValue,
+//                                                        title: "Input",
+//                                                        options: [.foreground],
+//                                                        textInputButtonTitle: "Send",
+//                                                        textInputPlaceholder: "你想说什么...")
+//        
+//        let goodbyeAction = UNNotificationAction(
+//                                                 identifier: SaySomethingCategoryAction.goodbye.rawValue,
+//                                                 title: "再见",
+//                                                 options: [.foreground])
+//        
+//        let cancelAction = UNNotificationAction(
+//                                                identifier: SaySomethingCategoryAction.none.rawValue,
+//                                                title: "取消",
+//                                                options: [.destructive])
+//        
+//        return UNNotificationCategory(identifier: UserNotificationCategoryType.saySomething.rawValue, actions: [inputAction, goodbyeAction, cancelAction], intentIdentifiers: [], options: [.customDismissAction])
+//    }()
+    
+//    let customUICategory: UNNotificationCategory = {
+//        let nextAction = UNNotificationAction(
+//                                              identifier: CustomizeUICategoryAction.switch.rawValue,
+//                                              title: "切换",
+//                                              options: [])
+//        let openAction = UNNotificationAction(
+//                                              identifier: CustomizeUICategoryAction.open.rawValue,
+//                                              title: "打开",
+//                                              options: [.foreground])
+//        let dismissAction = UNNotificationAction(
+//                                                 identifier: CustomizeUICategoryAction.dismiss.rawValue,
+//                                                 title: "忽略",
+//                                                 options: [.destructive])
+//        return UNNotificationCategory(identifier: UserNotificationCategoryType.customUI.rawValue, actions: [nextAction, openAction, dismissAction], intentIdentifiers: [], options: [])
+//    }()
+//    NSSet<UNNotificationCategory *> *categories
+//    
+//    
+//    
+//    [[UNUserNotificationCenter currentNotificationCenter] setNotificationCategories:];
+//    UNUserNotificationCenter.current().setNotificationCategories([saySomethingCategory, customUICategory])
 
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -9,38 +9,25 @@
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
 
-typedef NS_ENUM(NSInteger, UserNotificationType){
+typedef NS_ENUM(NSUInteger, UserNotificationType){
     UserNotificationTypeTimeInterval = 0,
-    UserNotificationTypeTimeIntervalForeground,
-    UserNotificationTypePendingRemoval,
-    UserNotificationTypePendingUpdate,
-    UserNotificationTypeDeliveredRemoval,
-    UserNotificationTypeDeliveredUpdate,
-    UserNotificationTypeActionable,
-    UserNotificationTypeMutableContent,
-    UserNotificationTypeMedia,
-    UserNotificationTypeCustomUI
+    UserNotificationTypeTimeIntervalForeground = 1,
+    UserNotificationTypePendingRemoval = 2,
+    UserNotificationTypePendingUpdate = 3,
+    UserNotificationTypeDeliveredRemoval = 4,
+    UserNotificationTypeDeliveredUpdate = 5,
+    UserNotificationTypeActionable = 6,
+    UserNotificationTypeMutableContent = 7,
+    UserNotificationTypeMedia = 8,
+    UserNotificationTypeCustomUI = 9
 };
-
-//extension UserNotificationType {
-//    var descriptionText: String {
-//        switch self {
-//        case .timeInterval: return "You need to switch to background to see the notification."
-//        case .timeIntervalForeground: return "The notification will show in-app. See NotificationHandler for more."
-//        default: return rawValue
-//        }
-//    }
-//    
-//    var title: String {
-//        switch self {
-//        case .timeInterval: return "Time"
-//        case .timeIntervalForeground: return "Foreground"
-//        default: return rawValue
-//        }
-//    }
-//}
 
 
 @interface NotificationHandler : NSObject
 
++ (NSString *)userNotiDescriptionText:(UserNotificationType)notiType;
+
++ (NSString *)userNotiTitle:(UserNotificationType)notiType;
+
++ (NSString *)userNotiRawValue:(UserNotificationType)notiType;
 @end

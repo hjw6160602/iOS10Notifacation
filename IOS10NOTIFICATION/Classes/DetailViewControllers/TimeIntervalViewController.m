@@ -7,8 +7,14 @@
 //
 
 #import "TimeIntervalViewController.h"
+#import "NotificationHandler.h"
+#import "UIAlertController+Extension.h"
 
 @interface TimeIntervalViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *timeTextField;
+
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @end
 
@@ -16,22 +22,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = [NotificationHandler userNotiTitle:self.notificationType];
+    self.descriptionLabel.text = [NotificationHandler userNotiDescriptionText:self.notificationType];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+
+- (IBAction)scheduleButtonPressed:(id)sender {
+    NSString *text = self.timeTextField.text;
+    NSTimeInterval timeInterval = [text doubleValue];
+    if (!timeInterval) {
+        NSLog(@"无效的时间戳");
+        return;
+    }
+    
+    UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc]init];
+    
+    // Create notification content
+    content.title = @"时间戳通知";
+    content.body = @"我的第一条通知";
+    
+    // Create a trigger to decide when/where to present the notification
+    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:timeInterval repeats:NO];
+    
+    // Create an identifier for this notification. So you could manage it later.
+    NSString *requestIdentifier = [NotificationHandler userNotiRawValue:self.notificationType];
+    
+    // The request describes this notification.
+    UNNotificationRequest *request =[UNNotificationRequest requestWithIdentifier:requestIdentifier content:content trigger:trigger];
+    
+    [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+        if (error) {
+            [UIAlertController showConfirmAlertWithMessage:error.localizedDescription Controller:self];
+        }else{
+            [NSString stringWithFormat:@"时间戳通知\"%@\"已安排",requestIdentifier];
+        }
+    }];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
