@@ -21,10 +21,10 @@
 - (IBAction)notificationButtonPressed:(id)sender {
     UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc]init];
 
-    content.title = @"图片通知";
-    content.body = @"把图片给我显示出来!";
+    content.title = @"精彩瞬间";
+    content.body = @"科比·布莱恩特！夺冠时刻！";
     
-    NSArray *imageNames = @[@"image", @"onevcat"];
+    NSArray *imageNames = @[@"image", @"onecat"];
     NSMutableArray *attachments = [NSMutableArray array];
     for (NSString *imgName in imageNames) {
         NSURL *imgURL = [[NSBundle mainBundle]URLForResource:imgName withExtension:@"jpg"];
