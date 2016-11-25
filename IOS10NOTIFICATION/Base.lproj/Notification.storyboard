@@ -679,7 +679,7 @@
         <!--CustomizeUI View Controller-->
         <scene sceneID="nlz-d5-bYe">
             <objects>
-                <viewController id="9Gr-Tc-4eV" customClass="CustomizeUIViewController" customModule="IOS10NOTIFICATION" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9Gr-Tc-4eV" customClass="CustomizeUIViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xZH-2F-Y53"/>
                         <viewControllerLayoutGuide type="bottom" id="AXm-0A-doW"/>
@@ -692,7 +692,7 @@
                                 <rect key="frame" x="157" y="121" width="62" height="30"/>
                                 <state key="normal" title="点我发送"/>
                                 <connections>
-                                    <action selector="notificationButtonPressed:" destination="9Gr-Tc-4eV" eventType="touchUpInside" id="fR3-Ke-2DE"/>
+                                    <action selector="notificationButtonPressed:" destination="9Gr-Tc-4eV" eventType="touchUpInside" id="jzy-l8-FjB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送自定义UI的通知" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFb-qA-NSd">

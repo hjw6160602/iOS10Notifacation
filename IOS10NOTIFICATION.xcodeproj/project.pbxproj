@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		672C54591DE8411100A05B4C /* NotificationPresentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 672C54581DE8411100A05B4C /* NotificationPresentItem.m */; };
 		6763EB8A1DE6938400475761 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6763EB891DE6938400475761 /* NSDictionary+Extension.m */; };
 		6763EB8D1DE6C6EA00475761 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6763EB8C1DE6C6EA00475761 /* NSObject+Extension.m */; };
 		677AAE3F1DE7D4F50032E13D /* onecat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 677AAE3E1DE7D4F50032E13D /* onecat.jpg */; };
@@ -68,6 +69,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		672C54571DE8411100A05B4C /* NotificationPresentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationPresentItem.h; sourceTree = "<group>"; };
+		672C54581DE8411100A05B4C /* NotificationPresentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationPresentItem.m; sourceTree = "<group>"; };
 		6763EB881DE6938400475761 /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
 		6763EB891DE6938400475761 /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		6763EB8B1DE6C6EA00475761 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
@@ -265,6 +268,8 @@
 		67EAD9EA1DE834F8001B3E91 /* NotificationContent */ = {
 			isa = PBXGroup;
 			children = (
+				672C54571DE8411100A05B4C /* NotificationPresentItem.h */,
+				672C54581DE8411100A05B4C /* NotificationPresentItem.m */,
 				67EAD9EB1DE834F8001B3E91 /* NotificationViewController.h */,
 				67EAD9EC1DE834F8001B3E91 /* NotificationViewController.m */,
 				67EAD9EE1DE834F8001B3E91 /* MainInterface.storyboard */,
@@ -441,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67EAD9ED1DE834F8001B3E91 /* NotificationViewController.m in Sources */,
+				672C54591DE8411100A05B4C /* NotificationPresentItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,6 +687,7 @@
 				67EAD9DA1DE815E3001B3E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67EAD9F51DE834F8001B3E91 /* Build configuration list for PBXNativeTarget "NotificationContent" */ = {
 			isa = XCConfigurationList;
@@ -689,6 +696,7 @@
 				67EAD9F71DE834F8001B3E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
