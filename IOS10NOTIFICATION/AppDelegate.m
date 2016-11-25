@@ -61,6 +61,8 @@
     [[UNUserNotificationCenter currentNotificationCenter] setNotificationCategories:categorySet];
 }
 
-
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
+    NSLog(@"%@",deviceToken);
+}
 
 @end
