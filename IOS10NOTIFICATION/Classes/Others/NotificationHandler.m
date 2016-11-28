@@ -99,7 +99,7 @@ typedef NS_ENUM(NSInteger, NotiPresentType){
             return @"saySomething1";
             break;
         case UserNotificationCategoryTypeCustomUI:
-            return @"CustomUI2";
+            return @"customUI2";
             break;
         default:
             return @"";
@@ -184,6 +184,9 @@ typedef NS_ENUM(NSInteger, NotiPresentType){
             options = UNNotificationPresentationOptionAlert | UNNotificationPresentationOptionSound;
             break;
         case UserNotificationTypeMedia:
+            options = UNNotificationPresentationOptionAlert | UNNotificationPresentationOptionSound;
+            break;
+        case UserNotificationTypeCustomUI:
             options = UNNotificationPresentationOptionAlert | UNNotificationPresentationOptionSound;
             break;
         default:

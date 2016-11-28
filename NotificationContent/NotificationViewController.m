@@ -21,10 +21,14 @@
 @end
 @implementation NotificationViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (NSMutableArray *)items{
+    if (!_items) {
+        _items = [[NSMutableArray alloc]init];
+    }
+    return _items;
 }
 
+//在系统需要显示自定义样式的通知详情视图时，这个方法将被调用，你需要在其中配置你的 UI
 - (void)didReceiveNotification:(UNNotification *)notification {
     UNNotificationContent *content = notification.request.content;
     
@@ -40,6 +44,7 @@
         
         NotificationPresentItem *presentItem = [NotificationPresentItem itemWithURL:url Title:title Text:text];
         [self.items addObject:presentItem];
+        i++;
     }
     [self updateUI:0];
 }
@@ -48,7 +53,7 @@
     NotificationPresentItem *item = self.items[index];
     if (item.url.startAccessingSecurityScopedResource){
         self.imageView.image = [UIImage imageWithContentsOfFile:item.url.path];
-        item.url.stopAccessingSecurityScopedResource;
+        [item.url stopAccessingSecurityScopedResource];
     }
 
     self.label.text = item.title;
