@@ -33,7 +33,6 @@
         [attachments addObject:attachment];
     }
 
-    
     content.attachments = attachments;
 
     

@@ -132,5 +132,19 @@
             }
         }];
     }];
+    
+    [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+        if (!error)
+            NSLog(@"通知请求 \"%@\" 已被安排发出", identifier);
+    }];
+    [self delay:2 Operation:^{
+        UNTimeIntervalNotificationTrigger *newTrigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:1 repeats:NO];
+        UNNotificationRequest *newRequest = [UNNotificationRequest requestWithIdentifier:identifier content:self.title2Content trigger:newTrigger];
+        [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:newRequest withCompletionHandler:^(NSError * _Nullable error) {
+            if (!error)
+                NSLog(@"通知 \"%@\" 已经被更新", identifier);
+        }];
+    }];
+    
 }
 @end
