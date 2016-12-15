@@ -7,6 +7,9 @@
 //
 
 #import "GifViewController.h"
+#import <UserNotifications/UserNotifications.h>
+#import "UIAlertController+Extension.h"
+#import "NotificationHandler.h"
 
 @interface GifViewController ()
 
@@ -16,22 +19,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)notificationButtonPressed:(id)sender {
+    UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc]init];
+    
+    content.title = @"百思不得姐";
+    content.body = @"糗事百科大全-推车惨案";
+    
+    NSArray *gifNames = @[@"car"];
+    NSMutableArray *attachments = [NSMutableArray array];
+    for (NSString *gifName in gifNames) {
+        NSURL *gifURL = [[NSBundle mainBundle]URLForResource:gifName withExtension:@"gif"];
+        NSString *identifier = [NSString stringWithFormat:@"gif-%@",gifName];
+        UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:identifier URL:gifURL options:nil error:nil];
+        [attachments addObject:attachment];
+    }
+    
+    content.attachments = attachments;
+    
+    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:5 repeats:NO];
+    NSString *requestIdentifier = [NotificationHandler userNotiRawValue:UserNotificationTypeMedia];
+    
+    UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:requestIdentifier content:content trigger:trigger];
+    [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+        if (error) {
+            [UIAlertController showConfirmAlertWithMessage:error.localizedDescription Controller:self];
+        } else {
+            NSLog(@"gif格式的动态图片通知:\"%@\"已经被安排发送:",requestIdentifier);
+        }
+    }];
 }
-*/
 
 @end

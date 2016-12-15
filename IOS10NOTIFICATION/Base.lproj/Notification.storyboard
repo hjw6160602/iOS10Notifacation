@@ -871,6 +871,9 @@
                                     <constraint firstAttribute="width" constant="62" id="sAE-MB-cb7"/>
                                 </constraints>
                                 <state key="normal" title="点我发送"/>
+                                <connections>
+                                    <action selector="notificationButtonPressed:" destination="XbB-Cz-rap" eventType="touchUpInside" id="lyR-SN-DvE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送带有视频的通知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCg-6J-2UX">
                                 <rect key="frame" x="16" y="84" width="343" height="21"/>
@@ -915,6 +918,9 @@
                                     <constraint firstAttribute="height" constant="30" id="w5H-OA-Gbz"/>
                                 </constraints>
                                 <state key="normal" title="点我发送"/>
+                                <connections>
+                                    <action selector="notificationButtonPressed:" destination="ice-Ib-UZG" eventType="touchUpInside" id="Gec-q6-au0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送带有音频的通知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RY-Oq-Zx2">
                                 <rect key="frame" x="16" y="84" width="343" height="21"/>
@@ -956,6 +962,9 @@
                                 <rect key="frame" x="157" y="120" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="点我发送"/>
+                                <connections>
+                                    <action selector="notificationButtonPressed:" destination="BOC-pQ-Ndh" eventType="touchUpInside" id="QhL-qE-fxu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="带有动态图片的通知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azx-2l-sdC">
                                 <rect key="frame" x="16" y="83" width="343" height="21"/>

@@ -44,7 +44,7 @@
         if (error) {
             [UIAlertController showConfirmAlertWithMessage:error.localizedDescription Controller:self];
         } else {
-            NSLog(@"自定义UI类型的通知:\"%@\"已经被安排发送:",requestIdentifier);
+            NSLog(@"png格式的图片通知:\"%@\"已经被安排发送:",requestIdentifier);
         }
     }];
 }

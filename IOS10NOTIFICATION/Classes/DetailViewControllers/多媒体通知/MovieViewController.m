@@ -7,6 +7,9 @@
 //
 
 #import "MovieViewController.h"
+#import <UserNotifications/UserNotifications.h>
+#import "UIAlertController+Extension.h"
+#import "NotificationHandler.h"
 
 @interface MovieViewController ()
 
@@ -16,22 +19,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)notificationButtonPressed:(id)sender {
+    UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc]init];
+    
+    content.title = @"五月天";
+    content.body = @"网友实拍五月天演唱会现场-孙悟空";
+    
+    NSArray *movNames = @[@"五月天"];
+    NSMutableArray *attachments = [NSMutableArray array];
+    for (NSString *movName in movNames) {
+        NSURL *movURL = [[NSBundle mainBundle]URLForResource:movName withExtension:@"MOV"];
+        NSString *identifier = [NSString stringWithFormat:@"mov-%@",movName];
+        UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:identifier URL:movURL options:nil error:nil];
+        [attachments addObject:attachment];
+    }
+    
+    content.attachments = attachments;
+    
+    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:5 repeats:NO];
+    NSString *requestIdentifier = [NotificationHandler userNotiRawValue:UserNotificationTypeMedia];
+    
+    UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:requestIdentifier content:content trigger:trigger];
+    [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+        if (error) {
+            [UIAlertController showConfirmAlertWithMessage:error.localizedDescription Controller:self];
+        } else {
+            NSLog(@"mov格式的视频通知:\"%@\"已经被安排发送:",requestIdentifier);
+        }
+    }];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
