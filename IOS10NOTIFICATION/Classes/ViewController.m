@@ -17,7 +17,8 @@ typedef NS_ENUM(NSInteger, SegueIdentity) {
     SegueIdentityShowTimeIntervalForeground = 2,
     SegueIdentityShowManagement = 3,
     SegueIdentityShowActionable = 4,
-    SegueIdentityShowMedia = 5
+    SegueIdentityShowMedia = 5,
+    SegueIdentityShowCustomUI = 6
 };
 
 
@@ -33,6 +34,7 @@ typedef NS_ENUM(NSInteger, SegueIdentity) {
 @implementation ViewController
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     __weak typeof(self)weakSelf = self;
     [[UNUserNotificationCenter currentNotificationCenter] getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
         if (settings.authorizationStatus == UNAuthorizationStatusAuthorized) {
@@ -78,6 +80,7 @@ typedef NS_ENUM(NSInteger, SegueIdentity) {
         case SegueIdentityShowManagement: break;
         case SegueIdentityShowActionable:break;
         case SegueIdentityShowMedia: break;
+        case SegueIdentityShowCustomUI: break;
         default: break;
     }
 }
