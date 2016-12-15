@@ -6,16 +6,16 @@
 //  Copyright © 2016年 贺嘉炜. All rights reserved.
 //
 
-#import "MediaViewController.h"
+#import "PhotoViewController.h"
 #import <UserNotifications/UserNotifications.h>
 #import "UIAlertController+Extension.h"
 #import "NotificationHandler.h"
 
-@interface MediaViewController ()
+@interface PhotoViewController ()
 
 @end
 
-@implementation MediaViewController
+@implementation PhotoViewController
 
 
 - (IBAction)notificationButtonPressed:(id)sender {

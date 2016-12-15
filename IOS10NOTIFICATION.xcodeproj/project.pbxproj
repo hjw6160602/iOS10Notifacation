@@ -10,6 +10,10 @@
 		672C54591DE8411100A05B4C /* NotificationPresentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 672C54581DE8411100A05B4C /* NotificationPresentItem.m */; };
 		6763EB8A1DE6938400475761 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6763EB891DE6938400475761 /* NSDictionary+Extension.m */; };
 		6763EB8D1DE6C6EA00475761 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6763EB8C1DE6C6EA00475761 /* NSObject+Extension.m */; };
+		676C96D21E0238C0001784FB /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C96D11E0238C0001784FB /* PhotoViewController.m */; };
+		676C96D51E023AC6001784FB /* GifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C96D41E023AC6001784FB /* GifViewController.m */; };
+		676C96D81E023AD0001784FB /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C96D71E023AD0001784FB /* AudioViewController.m */; };
+		676C96DB1E023ADA001784FB /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C96DA1E023ADA001784FB /* MovieViewController.m */; };
 		677AAE3F1DE7D4F50032E13D /* onecat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 677AAE3E1DE7D4F50032E13D /* onecat.jpg */; };
 		677AAE411DE7D5880032E13D /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 677AAE401DE7D5880032E13D /* image.jpg */; };
 		67B7ECEF1DE44EDE00790068 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ECEE1DE44EDE00790068 /* AppDelegate.m */; };
@@ -22,7 +26,6 @@
 		67B7ED0F1DE4531500790068 /* TimeIntervalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED0E1DE4531500790068 /* TimeIntervalViewController.m */; };
 		67B7ED121DE4532800790068 /* ManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED111DE4532800790068 /* ManagementViewController.m */; };
 		67B7ED151DE4533900790068 /* ActionableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED141DE4533900790068 /* ActionableViewController.m */; };
-		67B7ED181DE4534700790068 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED171DE4534700790068 /* MediaViewController.m */; };
 		67B7ED1B1DE4535600790068 /* CustomizeUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7ED1A1DE4535600790068 /* CustomizeUIViewController.m */; };
 		67EAD9D41DE815E3001B3E91 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EAD9D31DE815E3001B3E91 /* NotificationService.m */; };
 		67EAD9D81DE815E3001B3E91 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 67EAD9D01DE815E3001B3E91 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -75,6 +78,14 @@
 		6763EB891DE6938400475761 /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		6763EB8B1DE6C6EA00475761 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
 		6763EB8C1DE6C6EA00475761 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		676C96D01E0238C0001784FB /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		676C96D11E0238C0001784FB /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		676C96D31E023AC6001784FB /* GifViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifViewController.h; sourceTree = "<group>"; };
+		676C96D41E023AC6001784FB /* GifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifViewController.m; sourceTree = "<group>"; };
+		676C96D61E023AD0001784FB /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		676C96D71E023AD0001784FB /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		676C96D91E023ADA001784FB /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		676C96DA1E023ADA001784FB /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 		677AAE3E1DE7D4F50032E13D /* onecat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = onecat.jpg; sourceTree = "<group>"; };
 		677AAE401DE7D5880032E13D /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		67B7ECE71DE44EDE00790068 /* IOS10NOTIFICATION.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS10NOTIFICATION.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,8 +106,6 @@
 		67B7ED111DE4532800790068 /* ManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagementViewController.m; sourceTree = "<group>"; };
 		67B7ED131DE4533900790068 /* ActionableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionableViewController.h; sourceTree = "<group>"; };
 		67B7ED141DE4533900790068 /* ActionableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionableViewController.m; sourceTree = "<group>"; };
-		67B7ED161DE4534700790068 /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
-		67B7ED171DE4534700790068 /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
 		67B7ED191DE4535600790068 /* CustomizeUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizeUIViewController.h; sourceTree = "<group>"; };
 		67B7ED1A1DE4535600790068 /* CustomizeUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizeUIViewController.m; sourceTree = "<group>"; };
 		67EAD9D01DE815E3001B3E91 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +154,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		676C96CF1E0238C0001784FB /* 多媒体通知 */ = {
+			isa = PBXGroup;
+			children = (
+				676C96D01E0238C0001784FB /* PhotoViewController.h */,
+				676C96D11E0238C0001784FB /* PhotoViewController.m */,
+				676C96D31E023AC6001784FB /* GifViewController.h */,
+				676C96D41E023AC6001784FB /* GifViewController.m */,
+				676C96D61E023AD0001784FB /* AudioViewController.h */,
+				676C96D71E023AD0001784FB /* AudioViewController.m */,
+				676C96D91E023ADA001784FB /* MovieViewController.h */,
+				676C96DA1E023ADA001784FB /* MovieViewController.m */,
+			);
+			path = "多媒体通知";
+			sourceTree = "<group>";
+		};
 		67B7ECDE1DE44EDE00790068 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +244,7 @@
 		67B7ED031DE4524F00790068 /* DetailViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				676C96CF1E0238C0001784FB /* 多媒体通知 */,
 				67B7ED0A1DE452FF00790068 /* AuthorizationViewController.h */,
 				67B7ED0B1DE452FF00790068 /* AuthorizationViewController.m */,
 				67B7ED0D1DE4531500790068 /* TimeIntervalViewController.h */,
@@ -228,8 +253,6 @@
 				67B7ED111DE4532800790068 /* ManagementViewController.m */,
 				67B7ED131DE4533900790068 /* ActionableViewController.h */,
 				67B7ED141DE4533900790068 /* ActionableViewController.m */,
-				67B7ED161DE4534700790068 /* MediaViewController.h */,
-				67B7ED171DE4534700790068 /* MediaViewController.m */,
 				67B7ED191DE4535600790068 /* CustomizeUIViewController.h */,
 				67B7ED1A1DE4535600790068 /* CustomizeUIViewController.m */,
 			);
@@ -416,8 +439,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				676C96D51E023AC6001784FB /* GifViewController.m in Sources */,
+				676C96D81E023AD0001784FB /* AudioViewController.m in Sources */,
 				67B7ED0C1DE452FF00790068 /* AuthorizationViewController.m in Sources */,
 				6763EB8D1DE6C6EA00475761 /* NSObject+Extension.m in Sources */,
+				676C96DB1E023ADA001784FB /* MovieViewController.m in Sources */,
 				67B7ED1B1DE4535600790068 /* CustomizeUIViewController.m in Sources */,
 				6763EB8A1DE6938400475761 /* NSDictionary+Extension.m in Sources */,
 				67EAEEAA1DE58ACC00BE4EFC /* UIAlertController+Extension.m in Sources */,
@@ -425,11 +451,11 @@
 				67EAD9DF1DE8224B001B3E91 /* NSString+MD5.m in Sources */,
 				67B7ECEF1DE44EDE00790068 /* AppDelegate.m in Sources */,
 				67B7ED0F1DE4531500790068 /* TimeIntervalViewController.m in Sources */,
+				676C96D21E0238C0001784FB /* PhotoViewController.m in Sources */,
 				67B7ED081DE4524F00790068 /* main.m in Sources */,
 				67B7ED151DE4533900790068 /* ActionableViewController.m in Sources */,
 				67EAEEAD1DE5A1BB00BE4EFC /* NotificationHandler.m in Sources */,
 				67B7ED091DE4524F00790068 /* ViewController.m in Sources */,
-				67B7ED181DE4534700790068 /* MediaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
