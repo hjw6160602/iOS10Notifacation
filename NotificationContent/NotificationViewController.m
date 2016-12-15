@@ -30,6 +30,7 @@
 
 //在系统需要显示自定义样式的通知详情视图时，这个方法将被调用，你需要在其中配置你的 UI
 - (void)didReceiveNotification:(UNNotification *)notification {
+    
     UNNotificationContent *content = notification.request.content;
     
     NSArray *items = [content.userInfo objectForKey:@"items"];
@@ -46,6 +47,7 @@
         [self.items addObject:presentItem];
         i++;
     }
+    
     [self updateUI:0];
 }
 

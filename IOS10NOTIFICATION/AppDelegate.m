@@ -57,7 +57,8 @@
     
 
     //将类别集合注册 进入通知中心
-    NSSet *categorySet = [NSSet setWithObjects:saySomethingCategory,customUICategory, nil];
+//    NSSet *categorySet = [NSSet setWithObjects:saySomethingCategory,customUICategory, nil];
+    NSSet *categorySet = [NSSet setWithObjects:saySomethingCategory, nil];
     [[UNUserNotificationCenter currentNotificationCenter] setNotificationCategories:categorySet];
 }
 
