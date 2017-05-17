@@ -9,7 +9,6 @@
 #import "NotificationService.h"
 #import "NSString+MD5.h"
 
-
 @interface NotificationService ()
 
 @property (nonatomic, strong) void (^contentHandler)(UNNotificationContent *contentToDeliver);
@@ -24,11 +23,13 @@
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSURL *loccalURL;
         if (data) {
+            //获得url的后缀名
             NSString *ext = url.absoluteString.pathExtension;
+            //获得沙盒Document路径
             NSURL *cacheURL = [NSURL fileURLWithPath:NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject];
             
             NSURL *urlPath = [[cacheURL URLByAppendingPathComponent:url.absoluteString.md5] URLByAppendingPathExtension:ext];
-            
+            //如果下载成功，将下载好的数据写入到urlPath的路径中
             if ([data writeToURL:urlPath atomically:YES]) {
                 loccalURL = urlPath;
             };

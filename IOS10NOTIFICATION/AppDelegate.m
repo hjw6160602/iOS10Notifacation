@@ -54,11 +54,10 @@
     
     NSString *customUICategoryIdentifier = [NotificationHandler categoryRawValue:UserNotificationCategoryTypeCustomUI];
     UNNotificationCategory *customUICategory = [UNNotificationCategory categoryWithIdentifier:customUICategoryIdentifier actions:@[nextAction, openAction, dismissAction] intentIdentifiers:@[] options:UNNotificationCategoryOptionCustomDismissAction];
-    
 
     //将类别集合注册 进入通知中心
-//    NSSet *categorySet = [NSSet setWithObjects:saySomethingCategory,customUICategory, nil];
-    NSSet *categorySet = [NSSet setWithObjects:saySomethingCategory, nil];
+    NSSet *categorySet = [NSSet setWithObjects:saySomethingCategory,customUICategory, nil];
+//    NSSet *categorySet = [NSSet setWithObjects:saySomethingCategory, nil];
     [[UNUserNotificationCenter currentNotificationCenter] setNotificationCategories:categorySet];
 }
 
