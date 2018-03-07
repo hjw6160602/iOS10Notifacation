@@ -21,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self registerNotificationCategory];
     
-    self.notificationHandler = (id)[[NotificationHandler alloc]init];
+    self.notificationHandler = (id)[[NotificationHandler alloc] init];
     [UNUserNotificationCenter currentNotificationCenter].delegate = self.notificationHandler;
     return YES;
 }

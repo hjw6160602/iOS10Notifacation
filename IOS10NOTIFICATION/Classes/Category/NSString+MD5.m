@@ -24,6 +24,4 @@
     return hash;
 }
 
-
-
 @end
